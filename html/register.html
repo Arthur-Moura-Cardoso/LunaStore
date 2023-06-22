@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <title>LunaStore - Registrar</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="divLeft">
+
+                <a href="../index.html"><img src="../img/Logo.svg" alt="Logo LunaStore" class="logo"></a>
+                <p class="nav_text nav_text-flex">
+                    Categorias
+                    <img src="../img/UI-Dropdown.svg" alt="Menu dropdown" class="icon_nav">
+                </p>
+                <a href="#" class="nav_text">Ofertas</a>
+                <a href="#" class="nav_text">Novidades</a>
+                <a href="#" class="nav_text">Delivery</a>
+            </div>
+            <div class="divRight">
+                <div class="input_caixa">
+                    <input type="text" placeholder="Pesquisar..." class="pesquisar" id="pesquisar">
+                    <label for="pesquisar"><img src="../img/UI-Lupa.svg" alt="Pesquisar"
+                            class="icon_nav icon_pesquisar"></label>
+                </div>
+                <a href="../html/login.html" class="nav_text nav_text-flex">
+                    <img src="../img/UI-Pessoa.svg" alt="Conta" class="icon_nav">
+                    Conta
+                </a>
+                <a href="#" class="nav_text nav_text-flex">
+                    <img src="../img/UI-Carrinho.svg" alt="Carrinho" class="icon_nav">
+                    Carrinho
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    
+    <div class="register">
+
+        <div class="title">
+            <h1>Para criar sua conta, siga os <br> passos abaixo</h1>
+            <h2>Crie sua conta para poder continuar comprando com a <strong>LunaStore</strong> e <br> aproveitar milhares de ofertas. Criar sua conta leva apenas alguns minutos.</h2>
+        </div>
+
+        <div class="formulario">
+            <form>
+
+                <div class="informationForm">
+
+                    <input type="text" name="nome" placeholder="Nome*">
+                    <input type="text" name="sobrenome" placeholder="Sobrenome*">
+                    <input type="tel" name="tel" placeholder="Número de telefone*">
+                    <input type="email" name="email" placeholder="Endereço de email*">
+                    <input type="password" name="senha" placeholder="Senha*">
+                    <input type="password" name="confirmSenha" placeholder="Confirme sua senha*">
+
+                </div>
+
+                <div class="terms">
+
+                    <input type="checkbox" name="termos" id="termos" onclick="(clicar)"><label for="termos">Li e aceito os <a href="">termos de acordo e de uso</a></label>
+
+                </div>
+                <div class="botao">
+                    <input type="submit" value="Continuar">
+                </div>
+            </form>
+        </div>
+
+    </div>
+    
+</body>
+</html>
