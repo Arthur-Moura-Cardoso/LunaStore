@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --background: #141517;
+    --fundo-botao: #F5F7F9;
+    --branco: #ffffff;
+    --preto: #000000;
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+body {
+    background: var(--background);
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 5vh 0;
+    max-width: 1040px;
+}
+
+.divLeft, .divRight {
+    display: flex;
+    align-items: center;
+}
+
+.divRight {
+    gap: 20px;
+}
+
+.divLeft {
+    gap: 25px;
+}
+
+.linha_branca{
+    width: 85px;
+    height: 1px;
+    background-color: transparent;
+}
+
+.logo {
+    width: 150px;
+}
+
+.nav_text {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav_text:hover {
+    opacity: 0.8;
+}
+
+.nav_text-flex {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon_nav {
+    width: 1rem;
+}
+
+.input_caixa {
+    display: flex;
+    align-items: center;
+}
+
+.pesquisar {
+    margin-left: 60px;
+    padding: 8px 10px 8px 16px;
+    background: var(--fundo-botao);
+    border: none;
+    border-radius: 10px;
+}
+
+.pesquisar::placeholder {
+    font-size: 0.9rem;
+    color: var(--preto);
+    font-weight: 500;
+}
+
+.icon_pesquisar {
+    position: relative;
+    right: 2rem;
+}

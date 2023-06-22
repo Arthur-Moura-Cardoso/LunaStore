@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: #141517;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    max-width: 956px;
+}
+
+.itensHome {
+    display: flex;
+    flex-direction: column;
+    width: 810px;
+}
+
+.banner {
+    width: 810px;
+    height: 177px;
+    background-color: #5C19CC;
+    border-radius: 4px;
+    display: flex;
+}
+
+.bannerEsquerda {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.bannerDireita {
+    width: 50%;
+    height: 10%;
+}
+
+.bannerDireita img {
+    margin-left: 50px;
+}
+
+.bannerText {
+    display: flex;
+    width: 100%;
+    margin-left: 120px;
+}
+
+.bannerText h1 {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24.2px;
+    color: #F8F9FA;
+    ;
+}
+
+.bannerButton {
+    width: 100%;
+    margin-left: 120px;
+}
+
+.bannerButton button {
+    background-color: #1B1C21;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 12px;
+    padding: 10px;
+    height: 30px;
+    width: 120px;
+}
+
+.bannerButton button:hover {
+    background-color: #343435;
+}
+
+.textOfertas {
+    margin-top: 40px;
+}
+
+.textOfertas h1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 19px;
+    font-style: normal;
+}
+
+.cardsContainerGeral {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.cardsContainer1 {
+    margin-top: 30px;
+    display: flex;
+    width: 810px;
+    max-width: 810px;
+    gap: 57px;
+}
+
+
+.cardContainer2 {
+    display: flex;
+    gap: 56px;
+}
+
+
+.cards {
+    width: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.imagemCard {
+    width: 165px;
+    height: 157px;
+    border-radius: 5px;
+    background-color: #a1a1a1;
+}
+
+.infoCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 7px;
+}
+
+.tituloPreco {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+}
+
+.tituloProduto {
+    font-size: 13px;
+    line-height: 11px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.tituloProduto p {
+    width: auto;
+}
+
+.Preco {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 8px;
+}
+
+.Preco span {
+    font-size: 8px;
+}
+
+.descProduto {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 6px;
+}
+
+.estrelasContainer {
+    display: flex;
+    gap: 1px;
+}
+
+.estrela {
+    width: 12px;
+    height: 12px;
+}
+
+.divQuantidade {
+    display: flex;
+    align-items: center;
+}
+
+.estrelaQuantidade {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 6px;
+}
+
+.cardButton {
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 10px;
+    font-style: normal;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #5C19CC;
+    border-radius: 5px;
+    border: transparent;
+}
+
+.cardButton:hover {
+    background-color: #431591;
+}
+
+.bolinhasContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.bolinhas {
+    width: 27px;
+    height: 26px;
+    background: #232323;
+    border-radius: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    cursor: pointer;
+}
+
+.bolinhas:hover {
+    background-color: #5C19CC;
+    ;
+}
+
+#bolinha1 {
+    background-color: #5C19CC;
+}
+
+.linha {
+    margin-top: 30px;
+    width: 810.01px;
+    height: 0px;
+    border: 1px solid #474545;
+}
+
+.textServices {
+    margin-top: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+.ServicosContainer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 40px;
+}
+
+.containerItem {
+    width: 250px;
+    height: 270px;
+    background: #121213;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.containerItem img {
+    width: 250px;
+    height: 144px;
+    background-image: url(image.png);
+    border-radius: 0px 0px 8px 8px;
+}
+
+.itemText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    gap: 10px;
+    margin: 15px;
+}
+
+.itemText h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.itemText p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    color: #F9F9F9;
+}
+

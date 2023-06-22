@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.page{
+    max-width: 810px;
+    width: 810px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.centralPage{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.containerLeftLogin{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.containerLeftLogin h1{
+    font-size: 20px;
+    border-bottom: 1px solid #2E2E2E;
+    padding-bottom: 15px;
+}
+
+.containerLeftLogin h3{
+    font-size: 11px;
+}
+
+
+.containerLeftLogin button{
+    background-color: #141517;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: transparent;
+    cursor: pointer;
+}
+
+.containerRightLogin form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid #272727;
+    padding: 30px;
+}
+
+.containerLeftForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerRightForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerRightForm button{
+    background-color: transparent;
+    border: none;
+    position: relative;
+    bottom: 2.1rem;
+    left: 9.5rem;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.containerRightForm span{
+    color: white;
+}
+
+.containerTopForm{
+    display: flex;
+    gap: 30px;
+}
+
+.containerTopForm input{
+    background-color: #121212;
+    border: 1px solid #313131;
+    border-radius: 4px;
+    height: 30px;
+    width: 175px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    color: white;
+}
+
+.containerTopForm input::placeholder{
+    color: #5a5a5a;
+}
+
+.containerButtonsForm input[type=submit]{
+    background-color: #5C19CC;
+    color: white;
+    width: 115px;
+    height: 33px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+.containerButtonsForm button{
+    background-color: #141517;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    width: 115px;
+    height: 33px;
+}
+
+.separate{
+    width: 190px;
+    height: 1.1px;
+    background-color: #272727;
+}
+
+.topButton{
+    margin-top: 10px;
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/compras.css">
+    <title>LunaStore - Compras</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="divLeft">
+
+                <a href="../home.html"><img src="../img/Logo.svg" alt="Logo LunaStore" class="logo"></a>
+                <p class="nav_text nav_text-flex">
+                    Categorias
+                    <img src="../img/UI-Dropdown.svg" alt="Menu dropdown" class="icon_nav">
+                </p>
+                <a href="#" class="nav_text">Ofertas</a>
+                <a href="#" class="nav_text">Novidades</a>
+                <a href="#" class="nav_text">Delivery</a>
+            </div>
+            <div class="divRight">
+                <div class="input_caixa">
+                    <input type="text" placeholder="Pesquisar..." class="pesquisar" id="pesquisar">
+                    <label for="pesquisar"><img src="../img/UI-Lupa.svg" alt="Pesquisar"
+                            class="icon_nav icon_pesquisar"></label>
+                </div>
+                <a href="../html/login.html" class="nav_text nav_text-flex">
+                    <img src="../img/UI-Pessoa.svg" alt="Conta" class="icon_nav">
+                    Conta
+                </a>
+                <a href="#" class="nav_text nav_text-flex">
+                    <img src="../img/UI-Carrinho.svg" alt="Carrinho" class="icon_nav">
+                    Carrinho
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="containerPrincipal">
+
+            <div class="containerEsquerda">
+                <div class="esquerda1">
+                    <div class="resumodopedido">
+                        <h1>Resumo do pedido</h1>
+                    </div>
+
+                    <div class="containerEmbaixo">
+                        <div class="imgProduto"></div>
+
+                        <div class="containerProdutoText">
+                            <div class="text1">
+                                <p>Fones de ouvido</p>
+                                <span>R$(Preço)</span>
+                            </div>
+
+                            <div class="text2">
+                                <p class="cor">Cor: {Cor}</p>
+                                <p class="quantidade">Quantidade: {Qnt}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="esquerda2">
+                    <div class="esquerda2Principal">
+                        <div class="entregaText">Entrega</div>
+
+                        <form>
+
+                            <div class="containerLinha">
+                                <div class="containerInput">
+                                    <label for="name">Nome*</label>
+                                    <input type="text" name="name" required>
+                                </div>
+                                <div class="containerInput">
+                                    <label for="sobrenome">Sobrenome*</label>
+                                    <input type="text" name="sobrenome" required>
+                                </div>
+                            </div>
+
+                            <div class="containerLinha">
+                                <div class="containerInput" id="inputAdress">
+                                    <label for="endereço">Endereço*</label>
+                                    <input type="text" name="endereço" required>
+                                </div>
+                            </div>
+
+                            <div class="containerLinha">
+                                <div class="containerInput">
+                                    <label for="cidade">Cidade*</label>
+                                    <input type="text" name="cidade" required>
+                                </div>
+                                <div class="containerInput">
+                                    <label for="cep">CEP*</label>
+                                    <input type="number" name="cep" required>
+                                </div>
+                            </div>
+
+                            <div class="containerLinha">
+                                <div class="containerInput">
+                                    <label for="telefone">Telefone*</label>
+                                    <input type="tel" name="telefone" required>
+                                </div>
+                                <div class="containerInput">
+                                    <label for="Email">Email*</label>
+                                    <input type="email" name="Email" required>
+                                </div>
+                            </div>
+
+
+
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="containerDireita">
+                <div class="containerResumo">
+                    <h1>Resumo do pedido</h1>
+                </div>
+                <div class="divLinha"></div>
+
+                <div class="containerCupom">
+                    <div class="Cupom1">
+                        <p>Insira Cupom</p>
+                    </div>
+
+                    <div class="Cupom2">
+                        <p>Aplicar Cupom</p>
+                    </div>
+                </div>
+
+                <div class="divLinha"></div>
+
+                <div class="containerResumo">
+                    <h1>Pagamento</h1>
+                </div>
+
+                <div class="divLinha"></div>
+
+                <div class="containerCartões">
+                    <div class="cartão">
+                        <svg width="32" height="14" viewBox="0 0 32 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.41214 10.1609L7.30539 8.05419C7.2284 7.9772 7.13741 7.9632 7.08841 7.9632C7.03942 7.9632 6.94843 7.9772 6.87144 8.05419L4.75769 10.1679C4.51972 10.4059 4.14876 10.7909 2.90991 10.7909L5.5066 13.3806C5.90031 13.7738 6.43399 13.9946 6.99043 13.9946C7.54686 13.9946 8.08054 13.7738 8.47425 13.3806L11.0779 10.7839C10.441 10.7839 9.90908 10.6579 9.41214 10.1609ZM4.75769 3.8267L6.87144 5.94044C6.92743 5.99644 7.01142 6.03143 7.08841 6.03143C7.1654 6.03143 7.24939 5.99644 7.30539 5.94044L9.39814 3.84769C9.89508 3.32975 10.462 3.21077 11.0989 3.21077L8.49525 0.614079C8.10154 0.220865 7.56786 0 7.01142 0C6.45499 0 5.9213 0.220865 5.5276 0.614079L2.93091 3.20377C4.16276 3.20377 4.54072 3.60972 4.75769 3.8267Z"
+                                fill="#00BDAE" />
+                            <path
+                                d="M13.3736 5.49254L11.7987 3.91073H10.9169C10.5389 3.91073 10.1609 4.06471 9.90197 4.33768L7.80222 6.43743C7.60624 6.6334 7.34728 6.73139 7.08831 6.73139C6.82164 6.72764 6.56639 6.62253 6.37439 6.43743L4.26064 4.31668C3.99468 4.05071 3.63072 3.89673 3.24576 3.89673H2.21689L0.614079 5.50654C0.220865 5.90024 0 6.43392 0 6.99036C0 7.54679 0.220865 8.08048 0.614079 8.47418L2.21689 10.084H3.25276C3.63072 10.084 3.99468 9.93001 4.26764 9.66404L6.38139 7.55029C6.57737 7.35432 6.83634 7.25633 7.09531 7.25633C7.35427 7.25633 7.61324 7.35432 7.80922 7.55029L9.91597 9.65704C10.1819 9.92301 10.5459 10.077 10.9308 10.077H11.8127L13.3876 8.49518C13.7824 8.09439 14.0026 7.5536 14 6.99097C13.9974 6.42835 13.7721 5.88963 13.3736 5.49254Z"
+                                fill="#00BDAE" />
+                            <path
+                                d="M17.2628 11L18.4702 3.72727H21.1974C21.7562 3.72727 22.2083 3.83144 22.554 4.03977C22.8996 4.24574 23.1399 4.53101 23.2749 4.8956C23.4098 5.25781 23.4382 5.67093 23.3601 6.13494C23.2843 6.60133 23.1174 7.01562 22.8594 7.37784C22.6037 7.74006 22.2663 8.02533 21.8473 8.23366C21.4283 8.43963 20.9382 8.54261 20.3771 8.54261H18.5696L18.7507 7.45952H20.3807C20.7074 7.45952 20.9844 7.4027 21.2116 7.28906C21.4413 7.17543 21.6224 7.01918 21.755 6.82031C21.8875 6.62145 21.9751 6.39299 22.0178 6.13494C22.058 5.87689 22.045 5.64962 21.9787 5.45312C21.9124 5.25663 21.7834 5.10393 21.5916 4.99503C21.4022 4.88376 21.143 4.82812 20.8139 4.82812H19.6065L18.5803 11H17.2628ZM23.6317 11L24.5408 5.54545H25.8263L24.9173 11H23.6317ZM25.3718 4.7642C25.1658 4.7642 24.9954 4.69555 24.8604 4.55824C24.7255 4.42093 24.6663 4.25639 24.6829 4.06463C24.6995 3.87287 24.7859 3.70833 24.9421 3.57102C25.1007 3.43371 25.2818 3.36506 25.4854 3.36506C25.6914 3.36506 25.8607 3.43371 25.9933 3.57102C26.1282 3.70833 26.1874 3.87287 26.1708 4.06463C26.1566 4.25639 26.0702 4.42093 25.9116 4.55824C25.7553 4.69555 25.5754 4.7642 25.3718 4.7642ZM28.1994 5.54545L28.9664 7.55895L30.4189 5.54545H31.7789L29.6802 8.27273L30.8983 11H29.5453L28.7179 9.03622L27.2477 11H25.8841L28.0005 8.27273L26.8358 5.54545H28.1994Z"
+                                fill="#00BDAE" />
+                        </svg>
+                    </div>
+
+                    <div class="cartãoRoxo">
+                        <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.54944 19.3562V18.0687C4.54944 17.5751 4.24894 17.2533 3.73388 17.2533C3.4764 17.2533 3.19742 17.3391 3.00426 17.6181C2.85411 17.382 2.63954 17.2533 2.31764 17.2533C2.10298 17.2533 1.88851 17.3176 1.71675 17.5536V17.2962H1.26611V19.3562H1.71675V18.2189C1.71675 17.8541 1.90991 17.6824 2.21041 17.6824C2.5107 17.6824 2.66105 17.8755 2.66105 18.2189V19.3562H3.11169V18.2189C3.11169 17.8541 3.32616 17.6824 3.60514 17.6824C3.90564 17.6824 4.05578 17.8755 4.05578 18.2189V19.3562H4.54944ZM11.2231 17.2962H10.4936V16.6739H10.043V17.2962H9.63522V17.7038H10.0429V18.6481C10.0429 19.1202 10.236 19.3991 10.7511 19.3991C10.9442 19.3991 11.1587 19.3348 11.309 19.249L11.1802 18.8627C11.0515 18.9485 10.9013 18.97 10.794 18.97C10.5794 18.97 10.4936 18.8412 10.4936 18.6266V17.7038H11.2231V17.2962ZM15.0429 17.2532C14.7854 17.2532 14.6138 17.382 14.5064 17.5536V17.2962H14.0558V19.3562H14.5064V18.1974C14.5064 17.8541 14.6566 17.661 14.9356 17.661C15.0214 17.661 15.1287 17.6825 15.2146 17.7039L15.3433 17.2748C15.2575 17.2533 15.1287 17.2533 15.0429 17.2533V17.2532ZM9.27041 17.4678C9.05574 17.3176 8.75535 17.2533 8.43345 17.2533C7.91849 17.2533 7.57518 17.5107 7.57518 17.9185C7.57518 18.2619 7.83266 18.4549 8.2833 18.5193L8.49787 18.5409C8.73394 18.5837 8.86268 18.6481 8.86268 18.7554C8.86268 18.9056 8.69103 19.0129 8.39054 19.0129C8.09014 19.0129 7.85407 18.9056 7.70382 18.7983L7.48926 19.1416C7.72533 19.3133 8.04723 19.3991 8.36903 19.3991C8.96992 19.3991 9.31332 19.1202 9.31332 18.7339C9.31332 18.3691 9.03434 18.1759 8.6051 18.1116L8.39054 18.0901C8.19738 18.0686 8.04723 18.0258 8.04723 17.8971C8.04723 17.7468 8.19738 17.661 8.43345 17.661C8.69103 17.661 8.94851 17.7682 9.07725 17.8326L9.27041 17.4678ZM21.2446 17.2533C20.9871 17.2533 20.8154 17.382 20.7081 17.5536V17.2962H20.2574V19.3562H20.7081V18.1974C20.7081 17.8541 20.8583 17.661 21.1372 17.661C21.2231 17.661 21.3305 17.6825 21.4163 17.7039L21.545 17.2748C21.4592 17.2533 21.3305 17.2533 21.2446 17.2533ZM15.4936 18.3262C15.4936 18.9485 15.9227 19.3991 16.588 19.3991C16.8884 19.3991 17.103 19.3348 17.3175 19.1631L17.103 18.7983C16.9313 18.9271 16.7596 18.9914 16.5665 18.9914C16.2017 18.9914 15.9442 18.7339 15.9442 18.3262C15.9442 17.94 16.2017 17.6824 16.5665 17.661C16.7596 17.661 16.9313 17.7253 17.103 17.8541L17.3175 17.4893C17.103 17.3176 16.8884 17.2533 16.588 17.2533C15.9227 17.2533 15.4936 17.7039 15.4936 18.3262ZM19.6567 18.3262V17.2962H19.206V17.5536C19.0558 17.3606 18.8412 17.2533 18.5622 17.2533C17.9828 17.2533 17.5322 17.7039 17.5322 18.3262C17.5322 18.9485 17.9828 19.3991 18.5622 19.3991C18.8626 19.3991 19.0773 19.2919 19.206 19.0987V19.3562H19.6567V18.3262ZM18.0042 18.3262C18.0042 17.9614 18.2403 17.661 18.6265 17.661C18.9913 17.661 19.2489 17.94 19.2489 18.3262C19.2489 18.691 18.9913 18.9914 18.6265 18.9914C18.2403 18.9699 18.0042 18.691 18.0042 18.3262ZM12.6181 17.2533C12.0172 17.2533 11.5879 17.6824 11.5879 18.3262C11.5879 18.97 12.0171 19.3991 12.6395 19.3991C12.9399 19.3991 13.2403 19.3133 13.4764 19.1202L13.2618 18.7983C13.0901 18.9271 12.8755 19.0129 12.661 19.0129C12.382 19.0129 12.103 18.8842 12.0386 18.5193H13.5623V18.3477C13.5838 17.6824 13.1975 17.2533 12.6181 17.2533ZM12.6181 17.6395C12.8969 17.6395 13.0902 17.8112 13.133 18.1331H12.0601C12.103 17.8541 12.2962 17.6395 12.6181 17.6395ZM23.7982 18.3262V16.4807H23.3476V17.5536C23.1974 17.3606 22.9828 17.2533 22.7038 17.2533C22.1244 17.2533 21.6738 17.7039 21.6738 18.3262C21.6738 18.9485 22.1244 19.3991 22.7038 19.3991C23.0043 19.3991 23.2189 19.2919 23.3476 19.0987V19.3562H23.7982V18.3262ZM22.1459 18.3262C22.1459 17.9614 22.3819 17.661 22.7682 17.661C23.133 17.661 23.3905 17.94 23.3905 18.3262C23.3905 18.691 23.133 18.9914 22.7682 18.9914C22.3819 18.9699 22.1459 18.691 22.1459 18.3262ZM7.08153 18.3262V17.2962H6.63089V17.5536C6.48064 17.3606 6.26607 17.2533 5.98709 17.2533C5.40771 17.2533 4.95707 17.7039 4.95707 18.3262C4.95707 18.9485 5.40771 19.3991 5.98709 19.3991C6.28758 19.3991 6.50215 19.2919 6.63089 19.0987V19.3562H7.08153V18.3262ZM5.40771 18.3262C5.40771 17.9614 5.64378 17.661 6.03 17.661C6.39481 17.661 6.65239 17.94 6.65239 18.3262C6.65239 18.691 6.39481 18.9914 6.03 18.9914C5.64378 18.9699 5.40771 18.691 5.40771 18.3262Z"
+                                fill="white" />
+                            <path d="M9.12012 1.65234H15.8797V13.7982H9.12012V1.65234Z" fill="#FF5F00" />
+                            <path
+                                d="M9.54938 7.72531C9.54938 5.25754 10.7081 3.06866 12.4892 1.65232C11.1803 0.622295 9.52797 0 7.72541 0C3.45488 0 0 3.45488 0 7.72531C0 11.9956 3.45488 15.4506 7.72531 15.4506C9.52787 15.4506 11.1802 14.8283 12.4892 13.7982C10.7081 12.4034 9.54938 10.1931 9.54938 7.72531Z"
+                                fill="#EB001B" />
+                            <path
+                                d="M24.9999 7.72531C24.9999 11.9956 21.5451 15.4506 17.2746 15.4506C15.4721 15.4506 13.8198 14.8283 12.5107 13.7982C14.3133 12.382 15.4507 10.1931 15.4507 7.72531C15.4507 5.25754 14.2918 3.06866 12.5107 1.65232C13.8197 0.622295 15.4721 0 17.2746 0C21.5451 0 24.9999 3.47638 24.9999 7.72531Z"
+                                fill="#F79E1B" />
+                        </svg>
+                    </div>
+
+                    <div class="cartão">
+                        <img src="../img/Vector1.svg" alt="visa">
+                    </div>
+                </div>
+
+                <div class="formPagamento">
+                    <div class="inputPagamento">
+                        <label for="Email">Email*</label>
+                        <input type="email" name="Email" required>
+                    </div>
+
+                    <div class="inputPagamento">
+                        <label for="cartãoName">Nome no cartão*</label>
+                        <input type="text" name="cartãoName" required>
+                    </div>
+
+                    <div class="inputPagamento">
+                        <label for="NumeroCartão">Numero do cartão*</label>
+                        <input type="number" name="NumeroCartão" required>
+                    </div>
+
+                    <div class="inputPagamentoRow">
+                        <div class="containerInputRow1">
+                            <label class="expira" for="Expira">Expira*</label>
+                            <input type="number" name="Expira" required>
+                        </div>
+
+                        <div class="containerInputRow">
+                            <label class="cvc" for="CVC*">CVC*</label>
+                            <input type="number" name="CVC" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerTotalCompra">
+                    <div class="containerCompraText">
+                        <p>Sub Total</p>
+                        <span>R$X</span>
+                    </div>
+                    <div class="containerCompraText">
+                        <p>Impostos(X%)</p>
+                        <span>R$X</span>
+                    </div>
+                    <div class="containerCompraText">
+                        <p>Desconto do Cupom</p>
+                        <span>R$X</span>
+                    </div>
+                    <div class="containerCompraText">
+                        <p>Custo de Envio</p>
+                        <span>R$X</span>
+                    </div>
+                </div>
+
+                <div class="divLinha"></div>
+                <div class="containerTotalPrincipal">
+                    <div class="containerTotal">
+                        <p>Total</p>
+                        <span>R$X</span>
+                    </div>
+                </div>
+
+                <div class="divPagar">
+                    Pagar R$X
+                </div>
+
+                <div class="cashback">
+                    <div class="cartãoCashback">
+                        <img src="../img/Group_86.svg" alt="cartão">
+                    </div>
+                    <div class="cashbackTexto">
+                        <p>Ganhe 5% de cashback</p>
+                        <span>Saiba mais</span>
+                    </div>
+                </div>
+
+            </div> <!--CONTAINERDIREITA-->
+        </div>
+
+
+    </main>
+</body>
+
+</html>
