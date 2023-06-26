@@ -1,5 +1,5 @@
 
-# LunaStore
+# LunaStor
 
 Um protótipo de uma loja virtual, com multiplas interfaces e com o intuito de aprimorar nossos conhecimentos e desenvolver nossas habilidades na área de desenvolvimento de sistemas.
 ## Autores
