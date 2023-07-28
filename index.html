@@ -9,19 +9,19 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/home.css">
+    <script src="../js/navbar.js" defer></script>
 </head>
 
 <body>
 
     <!--HEADER PAGINA HOME-->
-    <header>
+    <header class="cabecalho">
         <nav class="navbar">
             <div class="divLeft">
-
-                <a href="#"><img src="img/Logo.svg" alt="Logo LunaStore" class="logo"></a>
+                <a href="../index.html"><img src="../img/Logo.svg" alt="Logo LunaStore" class="logo"></a>
                 <p class="nav_text nav_text-flex">
                     Categorias
-                    <img src="img/UI-Dropdown.svg" alt="Menu dropdown" class="icon_nav">
+                    <img src="../img/UI-Dropdown.svg" alt="Menu dropdown" class="icon_nav">
                 </p>
                 <a href="#" class="nav_text">Ofertas</a>
                 <a href="#" class="nav_text">Novidades</a>
@@ -30,19 +30,58 @@
             <div class="divRight">
                 <div class="input_caixa">
                     <input type="text" placeholder="Pesquisar..." class="pesquisar" id="pesquisar">
-                    <label for="pesquisar"><img src="img/UI-Lupa.svg" alt="Pesquisar"
+                    <label for="pesquisar"><img src="../img/UI-Lupa.svg" alt="Pesquisar"
                             class="icon_nav icon_pesquisar"></label>
                 </div>
-                <a href="html/login.html" class="nav_text nav_text-flex">
-                    <img src="img/UI-Pessoa.svg" alt="Conta" class="icon_nav">
+                <a href="#" class="nav_text nav_text-flex">
+                    <img src="../img/UI-Pessoa.svg" alt="Conta" class="icon_nav">
                     Conta
                 </a>
-                <a href="html/compras.html" class="nav_text nav_text-flex">
-                    <img src="img/UI-Carrinho.svg" alt="Carrinho" class="icon_nav">
+                <a href="#" class="nav_text nav_text-flex">
+                    <span class="carrinho_contador"></span>
+                    <img src="../img/UI-Carrinho.svg" alt="Carrinho" class="icon_nav">
                     Carrinho
                 </a>
             </div>
+            <button class="menu_hamburguer"></button>
         </nav>
+        <ul class="lista_mobile">
+            <li class="pesquisar_mobile">
+                <div class="input_caixa">
+                    <input type="text" placeholder="Pesquisar..." class="pesquisar" id="pesquisar">
+                    <label for="pesquisar"><img src="../img/UI-Lupa.svg" alt="Pesquisar" 
+                        class="icon_nav icon_pesquisar"></label>
+                </div>
+            </li>
+            <li>
+                <p class="nav_text nav_text-flex">
+                    Categorias
+                    <img src="../img/UI-Dropdown.svg" alt="Menu dropdown" class="icon_nav">
+                </p>
+            </li>
+            <li>
+                <a href="#" class="nav_text">Ofertas</a>
+            </li>
+            <li>
+                <a href="#" class="nav_text">Novidades</a>
+            </li>
+            <li>
+                <a href="#" class="nav_text">Delivery</a>
+            </li>
+            <li>
+                <a href="login.html" class="nav_text nav_text-flex">
+                    <img src="../img/UI-Pessoa.svg" alt="Conta" class="icon_nav">
+                    Conta
+                </a>
+            </li>
+            <li>
+                <a href="compras.html" class="nav_text nav_text-flex">
+                    <img src="../img/UI-Carrinho.svg" alt="Carrinho" class="icon_nav">
+                    Carrinho
+                </a>
+                
+            </li>
+        </ul>
     </header>
     <!--FIM DO HEADER-->
 
