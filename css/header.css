@@ -2,17 +2,21 @@
 
 :root {
     --background: #141517;
+    --preto_lista: #0E0E10;
     --fundo-botao: #F5F7F9;
     --branco: #ffffff;
+    --branco_escuro: #E9E9E9;
+    --cinza_escuro: #1a1c1f;
     --preto: #000000;
+    --roxo: #5C19CC;
+    --cinza: #2E2E2E;
+    --cinza_lista: #121214;
     --fonte-principal: 'Inter', sans-serif;
+    --botao-hover: #431591;
+    --botao-transparente_hover: #e3dede30;
 }
 
-body {
-    background: var(--background);
-    font-family: var(--fonte-principal);
-    color: var(--branco);
-
+.cabecalho {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +29,6 @@ body {
     justify-content: space-between;
     gap: 10px;
     margin: 5vh 0;
-    max-width: 1040px;
 }
 
 .divLeft, .divRight {
@@ -54,7 +57,6 @@ body {
 .nav_text {
     color: var(--branco);
     text-decoration: none;
-    font-weight: 500;
     cursor: pointer;
 }
 
@@ -88,10 +90,109 @@ body {
 .pesquisar::placeholder {
     font-size: 0.9rem;
     color: var(--preto);
-    font-weight: 500;
 }
 
 .icon_pesquisar {
     position: relative;
     right: 2rem;
+}
+
+.carrinho_contador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    bottom: 1.4vh;
+    position: relative;
+    left: 2.2vw;
+    background: red;
+    border-radius: 25px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.75rem;
+    opacity: 0;
+}
+
+.carrinho_contador.ativo {
+    opacity: 1;
+}
+
+/*Menu Hamburguer Mobile*/
+.lista_mobile,
+.menu_hamburguer {
+    display: none;
+}
+
+@media (max-width:768px) {
+    /*navbar*/
+    .cabecalho {
+        align-items: flex-start;
+    }
+
+    .navbar {
+        margin: 3vh auto;
+        gap: 36px;
+    }
+
+    .navbar .nav_text,
+    .navbar p,
+    .navbar .input_caixa{
+        display: none;
+    }
+
+    .menu_hamburguer {
+        display: block;
+        background: url(../img/UI-Menu_Hamburguer.svg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        border: none;
+        height: 1.75em;
+        width: 1.75em;
+    }
+    
+    .lista_mobile {
+        position: absolute;
+        top: 12vh;
+        left: 0px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3rem;
+        padding: 2rem 0;
+        height: 80vh;
+        width: 1px;
+        background: var(--roxo);
+        transition: .3s ease-in-out;
+        visibility: hidden;
+        overflow-x: hidden;
+    }
+    
+    .lista_mobile.ativo {
+        padding-left: 24px ;
+        width: 50%;
+        visibility: visible;
+        overflow-y: auto;
+    }
+    
+    .pesquisar {
+        max-width: 160px;
+        padding: 6px 4px 6px 8px;
+        margin-left: 0px;
+        border-radius: 4px;
+    }
+    
+    .pesquisar::placeholder {
+        font-size: 0.8rem;
+        color: var(--preto);
+    }
+
+    .navbar_mobile {
+        display: flex;
+    }
+
+    .logo_mobile {
+        display: block;
+    }
 }
