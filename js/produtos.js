@@ -16,12 +16,15 @@
         if(operacao === "-"){
             if(valor > 0){
                 input.value--
+                quantidadeProdutos.textContent = `${valorMaximo + 1} itens`
             }
         }else if(operacao === "+") {
             if(valor < valorMaximo){
-                input.value++
+                input.value++                
+                quantidadeProdutos.textContent = `${valorMaximo - 1} itens`
             }
         }
+
     }
 
     //mini imagens
