@@ -1,5 +1,6 @@
     //Botão de quantidade
     var input = document.querySelector(".quantidade_valor")
+    input.value = 0
     var controle = document.querySelectorAll(".quantidade_controle")
     var quantidadeProdutos = document.querySelector(".roxo")
     
@@ -16,15 +17,17 @@
         if(operacao === "-"){
             if(valor > 0){
                 input.value--
+                input.dataset.quantidade--
                 quantidadeProdutos.textContent = `${valorMaximo + 1} itens`
             }
         }else if(operacao === "+") {
-            if(valor < valorMaximo){
-                input.value++                
+            if(valorMaximo > 0){
+                input.value++
+                input.dataset.quantidade++       
+                console.log(input.dataset.quantidade)        
                 quantidadeProdutos.textContent = `${valorMaximo - 1} itens`
             }
         }
-
     }
 
     //mini imagens
@@ -50,7 +53,7 @@
         add.onclick = (evento) => {
             let produtos = parseInt(input.value)
 
-            carrinho.innerText = produtos
+            carrinho.innerText = 1
 
             if(produtos === 0){
                 carrinho.style.opacity = "0"

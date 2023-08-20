@@ -60,6 +60,7 @@ body {
     display: flex;
     margin-top: 6px;
     gap: 6px;
+    cursor: pointer;
 }
 
 .mini_imagem-produto {

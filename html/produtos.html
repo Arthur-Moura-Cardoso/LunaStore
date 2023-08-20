@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/produtos.css">
     <script src="../js/produtos.js" defer></script>
     <script src="../js/navbar.js" defer></script>
+    <script src="../js/storage.js" defer></script>
 </head>
 <body>
     <header class="cabecalho">
@@ -30,11 +31,11 @@
                     <label for="pesquisar"><img src="../img/UI-Lupa.svg" alt="Pesquisar"
                             class="icon_nav icon_pesquisar"></label>
                 </div>
-                <a href="#" class="nav_text nav_text-flex">
+                <a href="login.html" class="nav_text nav_text-flex">
                     <img src="../img/UI-Pessoa.svg" alt="Conta" class="icon_nav">
                     Conta
                 </a>
-                <a href="#" class="nav_text nav_text-flex">
+                <a href="compras.html" class="nav_text nav_text-flex">
                     <span class="carrinho_contador"></span>
                     <img src="../img/UI-Carrinho.svg" alt="Carrinho" class="icon_nav">
                     Carrinho
@@ -93,7 +94,7 @@
             </div>
             <div class="produtos">
                 <div class="imagens">
-                    <img src="../img/Imagem-demo.png" alt="Imagem do 'Nome do pruduto'" class="imagem_produto">
+                    <img src="../img/teste.jpg" alt="Imagem do 'Nome do pruduto'" class="imagem_produto">
                     <div class="mini_imagens">
                         <img src="https://www.1zoom.me/big2/809/306833-alexfas01.jpg" alt="Imagem do 'Nome do pruduto'" class="mini_imagem-produto">
                         <img src="https://i.pinimg.com/originals/e9/64/88/e96488ebe03bbadb7fe0743f9dbc5515.jpg" alt="Imagem do 'Nome do pruduto'" class="mini_imagem-produto">
@@ -104,7 +105,7 @@
                 </div>
                 <div class="info">
                     <div class="produto_info">
-                        <h1 class="produto_nome">Nome do produto</h1>
+                        <h1 class="produto_nome">Fone Gamer</h1>
                         <p class="produto_text">Descrição do Produto......Lorem ipsum dolor sit amet, consectetur adipiscin</p>
                         <div class="notas">
                             <img src="../img/UI-Estrelinha.svg" alt="" class="estrela">
@@ -116,7 +117,7 @@
                         </div>
                     </div>
                     <div class="produto_info">
-                        <h2 class="produto_valor">R$ XX,00 ou XX.00/mês</h2>
+                        <h2 class="produto_valor">R$<span class="valor">85,00</span></h2>
                         <p class="produto_text">Pagamento Sugerido bla bla bla...</p>
                     </div>
                     <div class="produto_info">
@@ -131,14 +132,16 @@
                     <div class="flex">
                         <div class="quantidade">
                             <button class="quantidade_controle menos">-</button>
-                            <input class="quantidade_valor" type="number" value="0" disabled>
+                            <input class="quantidade_valor" data-quantidade="0" type="number" disabled>
                             <button class="quantidade_controle mais">+</button>
                         </div>
                         <p class="text">Somente <span class="roxo">21 itens</span>
                             <br>restantes, não perca</p>
                     </div>
                     <div class="botoes">
-                        <button class="botao botao_comprar">Comprar</button>
+                        <a href="compras.html">
+                            <button class="botao botao_comprar">Comprar</button>
+                        </a>
                         <button class="botao botao_carrinho">Add Carrinho</button>
                     </div>
                     <div class="entrega">

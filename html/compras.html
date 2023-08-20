@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/compras.css">
     <script src="../js/navbar.js" defer></script>
+    <script src="../js/storage.js" defer></script>
+    <script src="../js/carrinho.js" defer></script>
     <title>LunaStore - Compras</title>
 </head>
 
@@ -92,22 +94,23 @@
                     </div>
 
                     <div class="containerEmbaixo">
-                        <div class="imgProduto"></div>
+                        <img class="imgProduto" src="" alt="">
 
                         <div class="containerProdutoText">
                             <div class="text1">
-                                <p>Fones de ouvido</p>
-                                <span>R$(Preço)</span>
+                                <p class="nome_produto"></p>
+                                <span>R$ <span class="preço_produto"></span></span>
                             </div>
 
                             <div class="text2">
-                                <p class="cor">Cor: {Cor}</p>
-                                <p class="quantidade">Quantidade: {Qnt}</p>
+                                <p class="cor">Cor: <span class="cor"></span></p>
+                                <p class="quantidade">Quantidade: <span class="quantidade quantidade_text"></span></p>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                
+                <button class="teste">asasdad</button>
                 <div class="esquerda2">
                     <div class="esquerda2Principal">
                         <div class="entregaText">Entrega</div>
