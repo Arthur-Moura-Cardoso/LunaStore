@@ -6,7 +6,7 @@ Um protótipo de uma loja virtual, com multiplas interfaces e com o intuito de a
 ## Autores
 
 - [@Fabricio Pisni](https://www.github.com/FabricioPisni)
-- [@Arthur](https://www.github.com/Arthur-Moura-Cardoso)
+- [@Arthur Moura](https://www.github.com/Arthur-Moura-Cardoso)
 - [@Marco Antonio](https://www.github.com/MarcoMacias)
 - [@Victor Manzano](https://www.github.com/VictorManzano)
 
