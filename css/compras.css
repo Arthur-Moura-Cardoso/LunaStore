@@ -23,6 +23,39 @@ main {
     max-width: 956px;
 }
 
+.alternateContent {
+    margin-top: 20px;
+
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alternateMainImg {
+    width: 300px;
+    height: auto;
+}
+
+.altenateText {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.altenateLink {
+    margin-top: 4px;
+
+    text-decoration: underline;
+    color: #F5F7F9;
+    font-size: 17px;
+    transition: .2s;
+    text-align: center;
+}
+
+.altenateLink:hover {
+    color: #c9c9c9;
+}
 
 .containerPrincipal {
     height: 830px;
