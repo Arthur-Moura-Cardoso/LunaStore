@@ -26,7 +26,6 @@ main {
 
 .containerPrincipal {
     height: 830px;
-    width: 790px;
     margin-top: 30px;
     display: flex;
     gap: 20px;
@@ -43,7 +42,7 @@ main {
 .esquerda1 {
     width: 461px;
     height: 211px;
-    border: 1px solid #000000;
+    border: 1px solid #303030;
     border-radius: 2px;
     display: flex;
     flex-direction: column;
@@ -130,7 +129,7 @@ main {
 .esquerda2 {
     width: 461px;
     height: 364px;
-    border: 1px solid #000000;
+    border: 1px solid #303030;
     border-radius: 2px;
     display: flex;
     align-items: center;
@@ -203,23 +202,24 @@ form {
 .containerDireita {
     width: 321px;
     height: 790px;
-    border: 1px solid #000000;
+    border: 1px solid #303030;
     border-radius: 2px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 10px;
     gap: 15px;
 }
 
 .containerResumo {
-    width: 100%;
-    height: 30px;
     display: flex;
-    align-items: center;
-    margin-left: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+
 }
 
 .containerResumo h1 {
+    margin-top: 9px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -227,11 +227,44 @@ form {
     line-height: 19px;
 }
 
+.containerResumoBottom {
+    margin-top: 19px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.containerPagamento {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+
+}
+
+.containerPagamento h1 {
+    margin-top: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.containerPagamento .divLinha {
+    margin-top: 13px;
+}
+
+.containerPagamentoBottom {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
 .divLinha {
-    width: 270px;
+    width: 287px;
     height: 1px;
     background-color: rgba(67, 67, 67, 0.25);
-    margin-left: 10px;
 }
 
 .containerCupom {
@@ -264,7 +297,6 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
     cursor: pointer;
 }
 
@@ -279,8 +311,6 @@ form {
 .containerCartões {
     display: flex;
     gap: 5px;
-    width: 100%;
-    margin-left: 10px;
 }
 
 .cartão {
@@ -313,8 +343,7 @@ form {
 .formPagamento {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-left: 10px;
+    gap: 27px;
     margin-top: 10px;
     color: white;
 }
@@ -334,7 +363,7 @@ form {
 }
 
 .inputPagamento input {
-    width: 250px;
+    width: 280px;
     height: 30px;
     background: #121212;
     border-radius: 2px;
@@ -355,7 +384,7 @@ form {
 }
 
 .containerInputRow input {
-    width: 107px;
+    width: 118px;
     height: 30px;
     background: #121212;
     border-radius: 2px;
@@ -378,7 +407,7 @@ form {
 }
 
 .containerInputRow1 input {
-    width: 123px;
+    width: 142px;
     height: 30px;
     background: #121212;
     border-radius: 2px;
@@ -401,6 +430,7 @@ form {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    gap: 18px;
 }
 
 .containerCompraText {
@@ -427,6 +457,12 @@ form {
 }
 
 .containerTotalPrincipal {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.containerTotalPrincipalTop {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -468,7 +504,6 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 10px;
     cursor: pointer;
 }
 
@@ -498,7 +533,7 @@ form {
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    justify-content: center;
 }
 
 .cashbackTexto p {
